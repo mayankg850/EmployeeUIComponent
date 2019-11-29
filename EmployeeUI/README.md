@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+This is UI service, URL is https://github.com/mayankg850/EmployeeUIComponent
+First we have to install node modules by npm install command
+use ng serve for running ui
+Just Run this UI Component on http://localhost:4200
+For Adding an Employee click on Add Employee http://localhost:4200/addEmployee
+To See Employee List click on Back to Employee List http://localhost:4200/employee.
+
+Backend is on different service URL is https://github.com/mayankg850/EmployeePortal for Backend Service  
+Just download the application and run as Spring Boot Application
+By Default this application will run on port 7070.
+
+
