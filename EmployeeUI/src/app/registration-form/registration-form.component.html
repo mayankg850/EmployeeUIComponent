@@ -1,0 +1,51 @@
+<div>
+  <div class="registrationform">
+    <form [formGroup]="registrationForm">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="First Name" formControlName="firstName" required>
+        <mat-error>
+          Please enter Firstname
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Last Name" formControlName="lastName" required>
+        <mat-error>
+          Please enter Lastname
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Gender</mat-label>
+        <mat-select formControlName="gender" required>
+          <mat-option *ngFor="let g of genderInput" [value]="g.value">
+            {{g.viewValue}}
+          </mat-option>
+        </mat-select>
+        <mat-error>
+          Please enter Gender
+        </mat-error>
+      </mat-form-field>
+      <!-- <mat-form-field class="example-full-width">
+        <input matInput placeholder="DateOfBirth" formControlName="dateOfBirth" required>
+        <mat-error>
+          Please enter DateOfBirth
+        </mat-error>
+      </mat-form-field> -->
+      <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Choose date of birth" formControlName="dateOfBirth" required>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Department" formControlName="department" required>
+        <mat-error>
+          Please enter Department
+        </mat-error>
+      </mat-form-field>
+    </form>
+    <button mat-stroked-button color='primary' (click)="submit()" [disabled]="registrationForm.invalid">Register</button>
+
+    <button mat-stroked-button color='primary' (click)="goToEmployeeList()">Back to Employee List</button>
+
+  </div>
+
+</div>

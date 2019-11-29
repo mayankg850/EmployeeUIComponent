@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "axn",
+        "lastName": "iam",
+        "gender": "male",
+        "dateOfBirth": "10/11/1998",
+        "department": "ECE"
+    },
+    {
+        "firstName": "efret",
+        "lastName": "rtrt",
+        "gender": "female",
+        "dateOfBirth": "22/11/1998",
+        "department": "ECE"
+    },
+    {
+        "firstName": "wsrt",
+        "lastName": "retert",
+        "gender": "male",
+        "dateOfBirth": "01/11/1990",
+        "department": "IT"
+    }
+]
